@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue 的基本框架</title>
+    <!--  本地导入 -->
+    <script src="../lib/vue.js"></script>
+    <!--  或者cdn导入  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{message}}
+    </div>
+
+    <!-- 创建script标签，里面写vue代码 -->
+    <script>
+        // 创建Vue实例
+        var vm= new Vue({
+            el: '#app',  // 表示实例控制页面上的区域
+            data:{       // data 属性中，存放当前实例的数据
+                message:"Hello Vue!"
+            }
+
+        })
+    </script>
+</body>
+</html>
