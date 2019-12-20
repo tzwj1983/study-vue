@@ -1,1 +1,1 @@
-# sutdy-vue
+# study-vue
